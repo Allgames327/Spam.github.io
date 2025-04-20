@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Функціонал - Система аналізу електронної пошти</title>
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Система аналізу пошти на спам</h1>
+                <p class="header-subtitle">Функціональні можливості програмного комплексу</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Навигация -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home icon"></i>Головна</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-info-circle icon"></i>Про проект</a></li>
+                <li><a href="features.html" class="active"><i class="fa-solid fa-list-check icon"></i>Функціонал</a></li>
+                <li><a href="technologies.html"><i class="fa-solid fa-microchip icon"></i>Технології</a></li>
+                <li><a href="conclusion.html"><i class="fa-solid fa-flag-checkered icon"></i>Висновки</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Основное содержимое -->
+    <main>
+        <div class="container fade-in">
+            <section class="welcome-section">
+                <h2 class="welcome-title">Функціональні можливості системи</h2>
+                <p class="welcome-text">
+                    Програмний комплекс пропонує широкий набір функцій для ефективного виявлення спам-повідомлень у поштовій скриньці Gmail.
+                </p>
+            </section>
+            
+            <!-- Основные функции -->
+            <section>
+                <h2>Ключові можливості</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3 class="feature-title">4 алгоритми аналізу</h3>
+                        <p>
+                            Система пропонує вибір з чотирьох методів класифікації:
+                        </p>
+                        <ul>
+                            <li>Наївний Байєс (кастомна реалізація)</li>
+                            <li>Наївний Байєс (scikit-learn)</li>
+                            <li>Випадковий ліс (Random Forest)</li>
+                            <li>Логістична регресія</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-key"></i></div>
+                        <h3 class="feature-title">Фільтрація за ключовими фразами</h3>
+                        <p>
+                            Використання власного словника спам-фраз на трьох мовах (українська, російська, англійська) з можливістю розширення.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-history"></i></div>
+                        <h3 class="feature-title">Історія перевірок</h3>
+                        <p>
+                            Всі перевірені листи зберігаються у текстовому файлі з можливістю перегляду в інтерфейсі програми.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <h3 class="feature-title">Робота з Gmail</h3>
+                        <p>
+                            Підтримка IMAP-протоколу для безпосередньої роботи з поштовою скринькою:
+                        </p>
+                        <ul>
+                            <li>Перевірка окремих листів</li>
+                            <li>Аналіз всієї поштової скриньки</li>
+                            <li>Автоматичне переміщення спаму</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 class="feature-title">Візуалізація результатів</h3>
+                        <p>
+                            Зручний інтерфейс з таблицею листів, кольоровою маркуванням спаму та статистикою перевірок.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-sliders-h"></i></div>
+                        <h3 class="feature-title">Гнучкі налаштування</h3>
+                        <p>
+                            Можливість вибору алгоритму, кількості листів для перевірки та інших параметрів роботи системи.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Процесс работы -->
+            <section class="architecture-section">
+                <h2>Процес аналізу пошти</h2>
+                <img src="images/workflow.png" alt="Процес обробки пошти" class="architecture-img">
+                
+                <ol class="architecture-steps">
+                    <li><strong>Підключення до Gmail</strong> - автентифікація через IMAP-протокол</li>
+                    <li><strong>Отримання листів</strong> - завантаження вказаної кількості повідомлень</li>
+                    <li><strong>Попередня обробка</strong> - витяг тексту, теми та відправника</li>
+                    <li><strong>Аналіз вмісту</strong> - застосування обраного алгоритму класифікації</li>
+                    <li><strong>Класифікація</strong> - визначення ймовірності спаму</li>
+                    <li><strong>Збереження результатів</strong> - запис до файлу історії та відображення в інтерфейсі</li>
+                </ol>
+            </section>
+            
+            <!-- Таблица сравнения -->
+            <section>
+                <h2>Порівняння алгоритмів</h2>
+                <p>
+                    У програмі реалізовано порівняльний аналіз ефективності різних алгоритмів на тестовому наборі даних.
+                </p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Алгоритм</th>
+                            <th>Точність</th>
+                            <th>Швидкість</th>
+                            <th>Помилкові спрацювання</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Наївний Байєс (кастомний)</td>
+                            <td>66%</td>
+                            <td>Дуже висока</td>
+                            <td>34%</td>
+                        </tr>
+                        <tr>
+                            <td>Наївний Байєс (ML)</td>
+                            <td>88%</td>
+                            <td>Висока</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td>Випадковий ліс</td>
+                            <td>95%</td>
+                            <td>Середня</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>Логістична регресія</td>
+                            <td>90%</td>
+                            <td>Висока</td>
+                            <td>10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p style="margin-top: 1rem;">
+                    Користувач може вибрати оптимальний алгоритм залежно від потреб - максимальна точність або швидкість обробки.
+                </p>
+            </section>
+            
+            <!-- Майбутні вдосконалення -->
+            <section>
+                <h2>Перспективи розвитку</h2>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-language icon"></i> Розширена підтримка мов</h4>
+                        <p>Додаткові мовні моделі для більш точного аналізу текстів</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-cloud icon"></i> Хмарна версія</h4>
+                        <p>Можливість використання системи як веб-сервісу</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-server icon"></i> Підтримка інших поштових сервісів</h4>
+                        <p>Розширення списку підтримуваних поштових серверів</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-bell icon"></i> Сповіщення</h4>
+                        <p>Система сповіщень про виявлений спам</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>

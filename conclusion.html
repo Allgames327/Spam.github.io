@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Висновки - Система аналізу електронної пошти</title>
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Система аналізу пошти на спам</h1>
+                <p class="header-subtitle">Результати та висновки дипломного проекту</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Навигация -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home icon"></i>Головна</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-info-circle icon"></i>Про проект</a></li>
+                <li><a href="features.html"><i class="fa-solid fa-list-check icon"></i>Функціонал</a></li>
+                <li><a href="technologies.html"><i class="fa-solid fa-microchip icon"></i>Технології</a></li>
+                <li><a href="conclusion.html" class="active"><i class="fa-solid fa-flag-checkered icon"></i>Висновки</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Основное содержимое -->
+    <main>
+        <div class="container fade-in">
+            <section class="welcome-section">
+                <h2 class="welcome-title">Підсумки реалізації проекту</h2>
+                <p class="welcome-text">
+                    У ході розробки системи аналізу пошти на спам було успішно вирішено поставлені завдання та досягнуто запланованих результатів.
+                    Програмний комплекс демонструє ефективність застосування алгоритмів машинного навчання для виявлення небажаних повідомлень.
+                </p>
+            </section>
+            
+            <!-- Основные результаты -->
+            <section>
+                <h2>Основні досягнення</h2>
+                
+                <div class="architecture-section">
+                    <h3>Реалізовані результати</h3>
+                    <ul>
+                        <li>Створено десктопний додаток для аналізу пошти з графічним інтерфейсом на PyQt5</li>
+                        <li>Реалізовано 4 алгоритми класифікації (2 версії Наївного Байєса, Random Forest та Логістична регресія)</li>
+                        <li>Досягнуто точності виявлення спаму до 95% при використанні Random Forest</li>
+                        <li>Розроблено систему збереження історії перевірок у текстовому форматі</li>
+                        <li>Забезпечено інтеграцію з Gmail через IMAP-протокол</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-chart-line fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Показники ефективності</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <p>Результати тестування системи:</p>
+                            <ul>
+                                <li>Точність виявлення спаму: 92-95%</li>
+                                <li>Помилкові спрацювання: 5-8%</li>
+                                <li>Середній час аналізу листа: 0.2-0.5 секунд</li>
+                                <li>Можливість перевірки всієї поштової скриньки</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-lightbulb fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Практична цінність</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <p>Ключові переваги системи:</p>
+                            <ul>
+                                <li>Економія часу на аналіз вхідної пошти</li>
+                                <li>Зниження ризику пропуску важливих повідомлень</li>
+                                <li>Можливість вибору оптимального алгоритму</li>
+                                <li>Простота використання та налаштування</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Порівняльна характеристика алгоритмів</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Алгоритм</th>
+                            <th>Точність</th>
+                            <th>Швидкість</th>
+                            <th>Помилкові спрацювання</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Наївний Байєс (кастомний)</td>
+                            <td>66%</td>
+                            <td>Дуже висока</td>
+                            <td>34%</td>
+                        </tr>
+                        <tr>
+                            <td>Наївний Байєс (ML)</td>
+                            <td>88%</td>
+                            <td>Висока</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td>Випадковий ліс</td>
+                            <td>95%</td>
+                            <td>Середня</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>Логістична регресія</td>
+                            <td>90%</td>
+                            <td>Висока</td>
+                            <td>10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- Выводы -->
+            <section class="architecture-section">
+                <h2>Ключові висновки</h2>
+                <ol class="architecture-steps">
+                    <li>
+                        <strong>Ефективність рішення</strong> - Система демонструє високу точність виявлення спаму при мінімальній кількості помилкових спрацювань, що підтверджено тестами.
+                    </li>
+                    <li>
+                        <strong>Технологічні переваги</strong> - Використання Python та бібліотек машинного навчання дозволило реалізувати потужний аналітичний функціонал у поєднанні зі зручним інтерфейсом.
+                    </li>
+                    <li>
+                        <strong>Користувацькі якості</strong> - Можливість вибору алгоритму, перевірки окремих листів або всієї скриньки, а також збереження історії роблять систему зручною для користувача.
+                    </li>
+                    <li>
+                        <strong>Перспективи розвитку</strong> - Проект має потенціал для вдосконалення через розширення списку алгоритмів, підтримку додаткових поштових сервісів та покращення інтерфейсу.
+                    </li>
+                </ol>
+                
+                <h3>Напрямки подальшого розвитку</h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-envelope icon"></i> Підтримка додаткових сервісів</h4>
+                        <p>Розширення списку підтримуваних поштових серверів (Outlook, Yahoo тощо)</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-brain icon"></i> Нові алгоритми</h4>
+                        <p>Додавання нейромереж та інших сучасних методів класифікації</p>
+                    </div>
+            </section>
+            
+            <!-- Заключительная часть -->
+            <section>
+                <h2>Загальний підсумок</h2>
+                <p>
+                    Дипломний проект з розробки системи аналізу пошти на спам успішно завершено. Реалізований програмний комплекс:
+                </p>
+                <ul>
+                    <li>Ефективно вирішує поставлену задачу виявлення небажаних повідомлень</li>
+                    <li>Поєднує кілька підходів до класифікації, що дозволяє вибирати оптимальний варіант</li>
+                    <li>Має зручний інтерфейс та широкі функціональні можливості</li>
+                    <li>Демонструє стабільну роботу та хороші показники точності</li>
+                </ul>
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-home icon"></i>Повернутися на головну</a>
+                </div>
+            </section>
+        </div>
+    </main>

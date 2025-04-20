@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Про проект - Система аналізу електронної пошти</title>
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Система аналізу пошти на спам</h1>
+                <p class="header-subtitle">Про дипломний проект з розробки програмного комплексу для виявлення небажаних повідомлень</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Навигация -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home icon"></i>Головна</a></li>
+                <li><a href="about.html" class="active"><i class="fa-solid fa-info-circle icon"></i>Про проект</a></li>
+                <li><a href="features.html"><i class="fa-solid fa-list-check icon"></i>Функціонал</a></li>
+                <li><a href="technologies.html"><i class="fa-solid fa-microchip icon"></i>Технології</a></li>
+                <li><a href="conclusion.html"><i class="fa-solid fa-flag-checkered icon"></i>Висновки</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Основное содержимое -->
+    <main>
+        <div class="container fade-in">
+            <section>
+                <h2>Опис проекту</h2>
+                <p>
+                    <strong>Система аналізу електронної пошти</strong> - це десктопний додаток, розроблений для автоматичного виявлення спам-повідомлень у поштовій скриньці Gmail з використанням алгоритмів машинного навчання та власних фільтрів на основі ключових фраз.
+                </p>
+                
+                <img src="images/project-overview.png" alt="Огляд проекту" class="main-image">
+                
+                <h3>Мета проекту</h3>
+                <p>
+                    Основною метою проекту є створення ефективного інструменту для аналізу вхідної пошти, який поєднує:
+                </p>
+                <ul>
+                    <li>4 алгоритми класифікації (Наївний Байєс у двох варіантах, Випадковий ліс та Логістична регресія)</li>
+                    <li>Систему фільтрації на основі ключових фраз з можливістю розширення</li>
+                    <li>Інтеграцію з IMAP-сервером Gmail для прямого доступу до поштової скриньки</li>
+                </ul>
+                
+                <div class="architecture-section">
+                    <h3>Актуальність проблеми</h3>
+                    <p>
+                        Проблема спаму в електронній пошті залишається однією з найбільш гострих у кіберпросторі:
+                    </p>
+                    <ul>
+                        <li>Близько 45% всіх електронних листів у світі є спамом</li>
+                        <li>Користувачі витрачають до 30% робочого часу на обробку непотрібних повідомлень</li>
+                        <li>Традиційні фільтри часто пропускають спам або помилково класифікують корисні листи</li>
+                        <li>Зростає кількість фішингових атак через електронну пошту</li>
+                    </ul>
+                    <p>
+                        Даний проект пропонує комплексне рішення, що поєднує переваги машинного навчання та правил на основі фраз.
+                    </p>
+                </div>
+                
+                <h3>Основні завдання проекту</h3>
+                <ol class="architecture-steps">
+                    <li>Реалізація безпечного підключення до Gmail через IMAP-протокол</li>
+                    <li>Розробка інтуїтивного інтерфейсу на PyQt5 для перегляду та аналізу листів</li>
+                    <li>Інтеграція та порівняльний аналіз ефективності різних алгоритмів ML</li>
+                    <li>Створення системи збереження історії перевірок у текстовому форматі</li>
+                    <li>Реалізація автоматичного переміщення спаму до відповідної папки</li>
+                    <li>Забезпечення можливості вибору алгоритму перевірки безпосередньо в інтерфейсі</li>
+                </ol>
+                
+                <h3>Архітектура проекту</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-desktop fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Клієнтський інтерфейс</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <p>Графічний інтерфейс на PyQt5 з таблицею листів, панеллю управління та візуалізацією результатів перевірки.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-brain fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Модуль аналізу</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <p>Компонент, що включає 4 алгоритми машинного навчання та кастомний фільтр на основі ключових фраз для класифікації листів.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-database fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Система логування</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <p>Підсистема для збереження історії аналізу у текстовому файлі з можливістю перегляду в інтерфейсі програми.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>

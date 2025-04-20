@@ -1,0 +1,87 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Система аналізу електронної пошти на наявність спаму</title>
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Система аналізу пошти на спам</h1>
+                <p class="header-subtitle">Програмний комплекс для виявлення небажаних повідомлень з використанням алгоритмів машинного навчання</p>
+                <a href="about.html" class="btn btn-primary">Дізнатися більше</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Навигация -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fa-solid fa-home icon"></i>Головна</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-circle-info icon"></i></i>Про проект</a></li>
+                <li><a href="features.html"><i class="fa-solid fa-list-check icon"></i>Функціонал</a></li>
+                <li><a href="technologies.html"><i class="fa-solid fa-microchip icon"></i>Технології</a></li>
+                <li><a href="conclusion.html"><i class="fa-solid fa-flag-checkered icon"></i>Висновки</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Основное содержимое -->
+    <main>
+        <div class="container fade-in">
+            <!-- Секция приветствия -->
+            <section class="welcome-section">
+                <h2 class="welcome-title">Інтелектуальний аналіз електронної пошти</h2>
+                <p class="welcome-text">
+                    Ласкаво просимо на сайт дипломного проекту з розробки системи фільтрації спам-повідомлень.
+                    Програмний комплекс дозволяє аналізувати вхідну пошту за допомогою чотирьох алгоритмів машинного навчання,
+                    забезпечуючи високий рівень виявлення небажаних повідомлень з мінімальним ризиком помилкових спрацювань.
+                </p>
+            </section>
+            
+            <!-- Основные функции -->
+            <section class="features-section">
+                <h2>Ключові особливості</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3 class="feature-title">Множинні алгоритми</h3>
+                        <p>
+                            Використання 4 методів машинного навчання: Наївний Байєс (дві версії), Випадковий ліс
+                            та Логістична регресія для максимально точної класифікації.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <h3 class="feature-title">Робота з Gmail</h3>
+                        <p>
+                            Інтеграція з IMAP-сервером Gmail для аналізу пошти без необхідності її завантаження.
+                            Підтримка перевірки як окремих листів, так і всієї поштової скриньки.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-history"></i></div>
+                        <h3 class="feature-title">Історія перевірок</h3>
+                        <p>
+                            Автоматичне збереження результатів аналізу в текстовому файлі з можливістю
+                            перегляду та фільтрації раніше перевірених повідомлень.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Скриншот программы -->
+            <section>
+                <h2>Інтерфейс програми</h2>
+                <img src="images/main_screen.png" alt="Головний екран програми" class="main-image" id="mainImage">
+            </section>
+        </div>
+    </main>

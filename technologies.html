@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Технології - Система аналізу електронної пошти</title>
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Система аналізу пошти на спам</h1>
+                <p class="header-subtitle">Технологічний стек та архітектура програмного комплексу</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Навигация -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home icon"></i>Головна</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-info-circle icon"></i>Про проект</a></li>
+                <li><a href="features.html"><i class="fa-solid fa-list-check icon"></i>Функціонал</a></li>
+                <li><a href="technologies.html" class="active"><i class="fa-solid fa-microchip icon"></i>Технології</a></li>
+                <li><a href="conclusion.html"><i class="fa-solid fa-flag-checkered icon"></i>Висновки</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Основное содержимое -->
+    <main>
+        <div class="container fade-in">
+            <section class="welcome-section">
+                <h2 class="welcome-title">Технологічний стек проекту</h2>
+                <p class="welcome-text">
+                    Програмний комплекс для аналізу пошти на спам використовує сучасні технології Python
+                    для забезпечення точної класифікації повідомлень та зручного інтерфейсу користувача.
+                </p>
+            </section>
+            
+            <!-- Основные технологии -->
+            <section>
+                <h2>Основні технології</h2>
+                
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fab fa-python fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Python 3.9+</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <p>
+                                Основна мова програмування проекту, обрана завдяки широким можливостям для машинного навчання.
+                            </p>
+                            <ul>
+                                <li>Простота та читабельність коду</li>
+                                <li>Багата екосистема бібліотек</li>
+                                <li>Крос-платформеність</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-desktop fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>PyQt5</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <p>
+                                Бібліотека для створення графічного інтерфейсу з таблицею листів та панеллю управління.
+                            </p>
+                            <ul>
+                                <li>Мультиплатформений інтерфейс</li>
+                                <li>Підтримка багатопоточності</li>
+                                <li>Сучасний вигляд елементів</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-brain fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Scikit-learn</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <p>
+                                Основна бібліотека для реалізації алгоритмів машинного навчання.
+                            </p>
+                            <ul>
+                                <li>Наївний Байєс (MultinomialNB)</li>
+                                <li>Випадковий ліс (Random Forest)</li>
+                                <li>Логістична регресія</li>
+                                <li>TF-IDF векторизація</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Дополнительные библиотеки -->
+            <section>
+                <h2>Додаткові бібліотеки</h2>
+                
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-envelope icon"></i> IMAPLib</h4>
+                        <p>Для підключення до Gmail через IMAP-протокол та отримання листів</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-table icon"></i> Pandas</h4>
+                        <p>Обробка датасету для навчання моделей (spam_dataset.csv)</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-database icon"></i> Joblib</h4>
+                        <p>Серіалізація та збереження навчених моделей</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-bell icon"></i> Plyer</h4>
+                        <p>Система сповіщень про завершення перевірки пошти</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <h4><i class="fa-solid fa-search icon"></i> Re (регулярні вирази)</h4>
+                        <p>Очищення тексту листів від HTML-тегів та зайвих символів</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Архитектура системы -->
+            <section class="architecture-section">
+                <h2>Архітектура системи</h2>
+                <img src="images/architecture.png" alt="Архітектура системи" class="architecture-img">
+                
+                <h3>Основні компоненти</h3>
+                <ol class="architecture-steps">
+                    <li><strong>Графічний інтерфейс</strong> - PyQt5, відображає листи, результати перевірки та дозволяє керувати процесом</li>
+                    <li><strong>IMAP-клієнт</strong> - отримує листи з Gmail-акаунта користувача</li>
+                    <li><strong>Модуль обробки листів</strong> - витягує текст, тему та відправника</li>
+                    <li><strong>Система класифікації</strong> - 4 алгоритми для визначення спаму</li>
+                    <li><strong>Історія перевірок</strong> - збереження результатів у текстові файли</li>
+                    <li><strong>Менеджер спаму</strong> - переміщення виявленого спаму до відповідної папки</li>
+                </ol>
+            </section>
+            
+            <!-- Обработка текста -->
+            <section>
+                <h2>Процес обробки листів</h2>
+                
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-file-alt fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Отримання листа</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <ul>
+                                <li>Підключення до Gmail через IMAP</li>
+                                <li>Завантаження заголовків (відправник, тема)</li>
+                                <li>Витяг текстового вмісту (з HTML або plain text)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-filter fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Попередня обробка</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <ul>
+                                <li>Видалення HTML-тегів</li>
+                                <li>Очищення від спецсимволів</li>
+                                <li>Перетворення до нижнього регістру</li>
+                                <li>Конкатенація теми та тіла листа</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fa-solid fa-cogs fa-2x" style="color: var(--primary-color);"></i>
+                            <h4>Аналіз та класифікація</h4>
+                        </div>
+                        <div class="tech-card-body">
+                            <ul>
+                                <li>Перевірка на ключові фрази (кастомний Байєс)</li>
+                                <li>Класифікація обраним алгоритмом ML</li>
+                                <li>Визначення ймовірності спаму</li>
+                                <li>Прийняття рішення на основі порогового значення</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Процесс обучения -->
+            <section>
+                <h2>Навчання моделей</h2>
+                <p>
+                    Для тренування моделей використовується датасет spam_dataset.csv з розміткою листів на спам/не спам.
+                </p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Етап</th>
+                            <th>Опис</th>
+                            <th>Використані інструменти</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Завантаження даних</td>
+                            <td>Читання CSV-файлу з текстами листів та мітками</td>
+                            <td>Pandas</td>
+                        </tr>
+                        <tr>
+                            <td>Векторизація</td>
+                            <td>Перетворення текстів у числові вектори</td>
+                            <td>TfidfVectorizer</td>
+                        </tr>
+                        <tr>
+                            <td>Тренування моделі</td>
+                            <td>Навчання обраного алгоритму на підготовлених даних</td>
+                            <td>Scikit-learn</td>
+                        </tr>
+                        <tr>
+                            <td>Оцінка якості</td>
+                            <td>Перевірка точності на тестовій вибірці</td>
+                            <td>Classification report</td>
+                        </tr>
+                        <tr>
+                            <td>Збереження моделі</td>
+                            <td>Серіалізація для подальшого використання</td>
+                            <td>Joblib</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
